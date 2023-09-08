@@ -1,0 +1,5 @@
+#!/bin/bash
+CFILE="$1"
+OUTPUT="${CFILE%.c}.o"
+gcc -c "$CFILE" -o "$OUTPUT"
+echo "compiled"

@@ -1,0 +1,5 @@
+#!/bin/bash
+export CFILE="hello.c"
+FILENAME=$(basename "$CFILE" .c)
+gcc "$CFILE" -o cisfun
+echo "exed"

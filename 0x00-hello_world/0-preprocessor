@@ -1,0 +1,4 @@
+#!/bin/bash
+CFILE="$1"
+OUTPUT="output.c"
+gcc "$CFILE" -o "$OUTPUT"
