@@ -1,0 +1,6 @@
+#!/bin/bash
+CFILE="$1"
+FILENAME=$(basename "$CFILE" .c)
+OUTPUT="$FILENAME.s"
+gcc -S -masm=intel "$CFILE" -o "$OUTPUT_FILE"
+echo "compiled"
