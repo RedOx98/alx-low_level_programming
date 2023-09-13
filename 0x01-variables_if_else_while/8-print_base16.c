@@ -10,18 +10,21 @@ int main(void)
 {
 	char hex = '0';
 
-	while (hex <= 9)
+	while (hex <= '9')
 	{
 		putchar(hex);
-		putchar('\n');
 		hex++;
 	}
+
+	hex = 'a';
 
 	while (hex <= 'f')
 	{
 		putchar(hex);
-		putchar('\n');
+		hex++;
 	}
+
+	putchar('\n');
 
 	return (0);
 }
