@@ -21,16 +21,36 @@ int main(void)
 		{
 			for (int i = n; i <= 98; i++)
 			{
-				printf("%d\n", n);
-				return (0);
+				if (i != 98)
+				{
+					printf("%d", i);
+					printf(",");
+					printf(" ");
+				}
+				else
+				{
+					printf("%d\n", i);
+					printf(",");
+					printf(" ");
+				}
 			}
 		}
 		else if (n >= 98)
 		{
 			for (int i = n; i >= 98; i--)
 			{
-				printf("%d\n", n);
-				return (0);
+				if (i != 98)
+				{
+					printf("%d", i);
+					printf(",");
+					printf(" ");
+				}
+				else
+				{
+					printf("%d\n", i);
+					printf(",");
+					printf(" ");
+				}
 			}
 		}
 	}
